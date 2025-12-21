@@ -89,12 +89,13 @@
                         voll.
                     </p>
                     <div class="flex flex-wrap gap-3">
-                        <a
-                            href="#contact"
+                        <button
+                            type="button"
+                            data-open-booking
                             class="px-5 py-3 rounded-full bg-gradient-to-r from-punch via-haze to-glow text-ink font-semibold shadow-lg shadow-punch/25 hover:scale-[1.01] transition"
                         >
                             Jetzt buchen
-                        </a>
+                        </button>
                         <a
                             href="#sets"
                             class="px-5 py-3 rounded-full glass text-white font-semibold hover:-translate-y-0.5 transition"
@@ -104,8 +105,8 @@
                     </div>
                     <div class="flex flex-wrap gap-6 text-sm text-gray-300">
                         <div>
-                            <p class="font-bold text-white text-lg">120+</p>
-                            <p>Shows in Clubs &amp; Events</p>
+                            <p class="font-bold text-white text-lg">Club &amp; Event Ready</p>
+                            <p>Shows mit Fokus auf Dancefloor-Energie</p>
                         </div>
                         <div>
                             <p class="font-bold text-white text-lg">4h+</p>
@@ -120,7 +121,11 @@
                 <div class="relative">
                     <div class="absolute -inset-6 bg-gradient-to-br from-punch via-haze to-glow opacity-30 blur-3xl"></div>
                     <div class="relative glass rounded-3xl p-6 shadow-2xl">
-                        <div class="aspect-[4/5] rounded-2xl bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_45%),radial-gradient(circle_at_80%_80%,rgba(39,241,197,0.12),transparent_40%)] border border-white/10 flex items-end">
+                        <div
+                            class="aspect-[4/5] rounded-2xl border border-white/10 flex items-end overflow-hidden"
+                            style="background-image: linear-gradient(180deg, rgba(12,12,18,0) 40%, rgba(12,12,18,0.7) 100%), radial-gradient(circle at 30% 20%, rgba(255,255,255,0.08), transparent 45%), radial-gradient(circle at 80% 80%, rgba(39,241,197,0.12), transparent 40%), url('/hero.jpg'); background-size: cover; background-position: center;"
+                            aria-label="DJ Live Shot"
+                        >
                             <div class="p-6">
                                 <p class="text-sm text-gray-300">Live-Impression</p>
                                 <p class="text-2xl font-display">Hands up, Pulse up</p>
@@ -190,17 +195,18 @@
                         Ein Mix aus vocal House, treibenden Basslines und uplifting Melodien. Hier ein Vorgeschmack –
                         live klinge ich noch größer.
                     </p>
-                    <div class="aspect-video rounded-2xl overflow-hidden border border-white/10">
-                        <iframe
-                            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2TRYkJECvfC?utm_source=generator"
-                            width="100%"
-                            height="100%"
-                            frameborder="0"
-                            allowfullscreen=""
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                            loading="lazy"
-                            class="bg-black"
-                        ></iframe>
+                    <div class="relative aspect-video rounded-2xl border border-white/10 bg-black">
+                        <div class="absolute inset-4">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                scrolling="no"
+                                frameborder="no"
+                                allow="autoplay"
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/philipp-280&color=%23ff5f6d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                                loading="lazy"
+                            ></iframe>
+                        </div>
                     </div>
                     <div class="grid gap-3 md:grid-cols-2 text-sm text-gray-300">
                         <div class="glass rounded-xl p-4">
@@ -209,7 +215,7 @@
                         </div>
                         <div class="glass rounded-xl p-4">
                             <p class="text-white font-semibold">Private Events</p>
-                            <p>120+ Weddings &amp; Birthdays zwischen Hamburg &amp; München</p>
+                            <p>Weddings &amp; Birthdays zwischen Hamburg &amp; München</p>
                         </div>
                     </div>
                 </div>
@@ -277,6 +283,73 @@
             </section>
         </main>
 
+        <div id="booking-modal" class="fixed inset-0 z-50 hidden">
+            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" data-close-booking></div>
+            <div class="relative max-w-2xl mx-auto mt-20 px-4">
+                <div class="glass rounded-3xl border border-white/10 shadow-2xl bg-[#0f0f17] overflow-hidden">
+                    <div class="flex items-start justify-between p-6 pb-4">
+                        <div>
+                            <p class="text-sm uppercase tracking-[0.2em] text-glow">Jetzt buchen</p>
+                            <h3 class="font-display text-2xl">Sag mir kurz die Eckdaten.</h3>
+                        </div>
+                        <button type="button" data-close-booking class="text-gray-400 hover:text-white transition text-xl leading-none">&times;</button>
+                    </div>
+                    <div class="px-6 pb-6 space-y-5">
+                        <form
+                            class="space-y-4"
+                            action="mailto:booking@mrpg.dj"
+                            method="post"
+                            enctype="text/plain"
+                        >
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <label class="space-y-1 text-sm text-gray-300">
+                                    <span>Datum</span>
+                                    <input name="Datum" type="text" placeholder="TT.MM.JJJJ" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
+                                </label>
+                                <label class="space-y-1 text-sm text-gray-300">
+                                    <span>Ort</span>
+                                    <input name="Ort" type="text" placeholder="Stadt / Location" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
+                                </label>
+                            </div>
+                            <div class="grid gap-4 md:grid-cols-2">
+                                <label class="space-y-1 text-sm text-gray-300">
+                                    <span>Event</span>
+                                    <input name="Event" type="text" placeholder="Hochzeit / Geburtstag / Club" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
+                                </label>
+                                <label class="space-y-1 text-sm text-gray-300">
+                                    <span>Gäste</span>
+                                    <input name="Gaeste" type="text" placeholder="ca. 80" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
+                                </label>
+                            </div>
+                            <label class="space-y-1 text-sm text-gray-300 block">
+                                <span>Wünsche &amp; Besonderheiten</span>
+                                <textarea
+                                    name="Wuensche"
+                                    rows="4"
+                                    placeholder="Musikrichtung, Technik, Zeitfenster..."
+                                    class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow"
+                                ></textarea>
+                            </label>
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <button
+                                    type="submit"
+                                    class="px-5 py-3 rounded-full bg-gradient-to-r from-punch via-haze to-glow text-ink font-semibold shadow-lg shadow-punch/25 hover:scale-[1.01] transition"
+                                >
+                                    Anfrage per Mail senden
+                                </button>
+                                <a
+                                    href="tel:+491234567890"
+                                    class="px-5 py-3 rounded-full glass font-semibold hover:-translate-y-0.5 transition"
+                                >
+                                    Oder anrufen: +49 123 456 7890
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="relative max-w-6xl mx-auto px-6 pb-10 pt-12 text-sm text-gray-400">
             <div class="flex flex-wrap items-center gap-4 justify-between">
                 <p>© 2025 DJ Mr Pg. All Groove Reserved.</p>
@@ -287,5 +360,44 @@
                 </div>
             </div>
         </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const modal = document.getElementById('booking-modal');
+                if (!modal) return;
+                const openers = document.querySelectorAll('[data-open-booking]');
+                const closers = modal.querySelectorAll('[data-close-booking]');
+                const body = document.body;
+
+                const openModal = () => {
+                    modal.classList.remove('hidden');
+                    body.classList.add('overflow-hidden');
+                };
+
+                const closeModal = () => {
+                    modal.classList.add('hidden');
+                    body.classList.remove('overflow-hidden');
+                };
+
+                openers.forEach((btn) =>
+                    btn.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        openModal();
+                    })
+                );
+
+                closers.forEach((el) =>
+                    el.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        closeModal();
+                    })
+                );
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+                        closeModal();
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
