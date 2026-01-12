@@ -1,12 +1,13 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html lang="de">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DJ Mr PG – Treibender House für jede Party</title>
+        <title>DJ Mr PG – House bis Tech-House (Hamburg & überall)</title>
         <meta
             name="description"
-            content="House-Music-DJ für Bars, Clubs, Hochzeiten und Geburtstage. Buchbar für Events aller Art."
+            content="DJ Mr PG: Groovy House, Jazzy/Latin House bis treibender Tech-House. SoundCloud hören, kurz anfragen. Premium AlphaTheta AZ Controller (Pioneer-Level)."
         />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -47,78 +48,94 @@
     </head>
     <body class="text-white font-body">
         <div class="absolute inset-0 -z-10 overflow-hidden">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.1),transparent_35%)]"></div>
-            <div class="absolute inset-y-0 left-1/2 w-[32rem] blur-[120px] opacity-30 bg-gradient-to-b from-punch to-haze -translate-x-1/2"></div>
+            <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.1),transparent_35%)]"
+            ></div>
+            <div
+                class="absolute inset-y-0 left-1/2 w-[32rem] blur-[120px] opacity-30 bg-gradient-to-b from-punch to-haze -translate-x-1/2"
+            ></div>
         </div>
 
+        <!-- Header (schlanker) -->
         <header class="relative max-w-6xl mx-auto px-6 pt-10">
             <div class="flex items-center justify-between gap-4">
                 <div class="flex items-center gap-3">
-                    <div class="h-11 w-11 rounded-full bg-gradient-to-br from-punch to-haze flex items-center justify-center font-display text-lg">
-                        DJ
-                    </div>
+                    <img
+                        src="/logo.svg"
+                        alt="PG"
+                        class="h-11 w-11 rounded-full border border-white/10 bg-black object-cover"
+                    />
                     <div>
-                        <p class="text-sm text-gray-300">DJ &amp; Producer</p>
+                        <p class="text-sm text-gray-300">DJ</p>
                         <p class="font-display text-xl">Mr PG</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-3">
-                    <a href="#contact" class="px-4 py-2 rounded-full glass text-sm font-semibold hover:-translate-y-0.5 transition">
-                        Anfrage
-                    </a>
                     <a
-                        href="mailto:booking@mrpg.dj"
+                        href="#contact"
                         class="px-4 py-2 rounded-full bg-glow text-ink text-sm font-semibold hover:brightness-110 transition"
                     >
-                        booking@mrpg.dj
+                        Jetzt anfragen
+                    </a>
+                    <a
+                        href="mailto:philippgmelin@yahoo.de"
+                        class="px-4 py-2 rounded-full glass text-sm font-semibold hover:-translate-y-0.5 transition"
+                    >
+                        philippgmelin@yahoo.de
                     </a>
                 </div>
             </div>
         </header>
 
         <main class="relative max-w-6xl mx-auto px-6 pb-16">
-            <section class="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center">
+            <!-- Hero (fokussiert, weniger Optionen) -->
+            <section class="mt-14 grid gap-10 lg:grid-cols-2 lg:items-center" id="top">
                 <div class="space-y-6">
-                    <p class="text-sm uppercase tracking-[0.2em] text-glow">Groove-first House &amp; Disco-Tech</p>
+                    <p class="text-sm uppercase tracking-[0.2em] text-glow">House</p>
                     <h1 class="font-display text-4xl sm:text-5xl leading-tight">
-                        Ich bin Mr PG, dein DJ für gute House music.
+                        I am your DJ Mr PG<br />
+                        <span class="text-gray-200">for house vibes only</span>
                     </h1>
+
                     <p class="text-lg text-gray-300">
-                        Meine Sets gehen von groovy House, Jazzy House zu latin House bis man sich im treibenden Tech-House befindet. 
-                        Ich schaffe gerne den Übergang zu schiebenden Techno im mittleren BPM Bereichden was den Raum anschiebt. 
-                        Du bekommst abgestimmte Dramaturgie und genau die
-                        Energie, die dein Floor braucht.
+                        Meine Sets gehen von groovy House über jazzy und Latin House bis hin zu treibendem Tech-House.
+                        Gerne schaffe ich dabei den Übergang zu schiebendem Techno im mittleren BPM-Bereich. Du bekommst eine abgestimmte Dramaturgie und genau die Energie, die dein Floor
+                        braucht.
                     </p>
+
                     <div class="flex flex-wrap gap-3">
-                        <button
-                            type="button"
-                            data-open-booking
-                            class="px-5 py-3 rounded-full bg-gradient-to-r from-punch via-haze to-glow text-ink font-semibold shadow-lg shadow-punch/25 hover:scale-[1.01] transition"
-                        >
-                            Jetzt buchen
-                        </button>
                         <a
                             href="#sets"
+                            class="px-5 py-3 rounded-full bg-gradient-to-r from-punch via-haze to-glow text-ink font-semibold shadow-lg shadow-punch/25 hover:scale-[1.01] transition"
+                        >
+                            Direkt reinhören
+                        </a>
+                        <a
+                            href="#contact"
                             class="px-5 py-3 rounded-full glass text-white font-semibold hover:-translate-y-0.5 transition"
                         >
-                            Mixes &amp; Referenzen
+                            Kontakt
                         </a>
                     </div>
-                    <div class="flex flex-wrap gap-6 text-sm text-gray-300">
-                        <div>
-                            <p class="font-bold text-white text-lg">House / Disco-Tech</p>
-                            <p>Warm, groovy, mit Punch</p>
+
+                    <!-- kleine, klare Fakten statt vieler Optionen -->
+                    <div class="grid gap-3 sm:grid-cols-3 text-sm text-gray-300">
+                        <div class="glass rounded-2xl p-4">
+                            <p class="text-white font-semibold">Sound</p>
+                            <p>Groovy • treibend • Abfahrt !</p>
                         </div>
-                        <div>
-                            <p class="font-bold text-white text-lg">Club &amp; Event Ready</p>
-                            <p>Dynamik fuer dancefloors &amp; weddings</p>
+                        <div class="glass rounded-2xl p-4">
+                            <p class="text-white font-semibold">Einsatz</p>
+                            <p>Bars • Clubs • private Events</p>
                         </div>
-                        <div>
-                            <p class="font-bold text-white text-lg">Hands-on Planung</p>
-                            <p>Soundcheck, Timings, Wunschlisten</p>
+                        <div class="glass rounded-2xl p-4">
+                            <p class="text-white font-semibold">Region</p>
+                            <p>Hamburg & überall nach Absprache</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Visual / Impression -->
                 <div class="relative">
                     <div class="absolute -inset-6 bg-gradient-to-br from-punch via-haze to-glow opacity-30 blur-3xl"></div>
                     <div class="relative glass rounded-3xl p-6 shadow-2xl">
@@ -129,73 +146,36 @@
                         >
                             <div class="p-6">
                                 <p class="text-sm text-gray-300">Live-Impression</p>
-                                <p class="text-2xl font-display">Hands up, Pulse up</p>
-                                <p class="text-sm text-gray-400">Momente, in denen der Raum explodiert.</p>
+                                <p class="text-2xl font-display">Groove first.</p>
+                                <p class="text-sm text-gray-400">Saubere Übergänge, klare Spannungskurve.</p>
                             </div>
                         </div>
-                        <div class="mt-6 grid grid-cols-2 gap-3">
+
+                        <!-- Equipment (neu, klar) -->
+                        <div class="mt-6 grid gap-3">
                             <div class="glass rounded-2xl p-4">
-                                <p class="text-sm text-gray-300">Vibes</p>
-                                <p class="font-display text-xl">Groovy, treibend, euphorisch</p>
-                            </div>
-                            <div class="glass rounded-2xl p-4">
-                                <p class="text-sm text-gray-300">Setup</p>
-                                <p class="font-display text-xl">Club-Ready Sound &amp; Light</p>
+                                <p class="text-sm text-gray-300">Equipment</p>
+                                <p class="font-display text-xl">AlphaTheta AZ (All-in-One-Controller)</p>
+                                <p class="text-sm text-gray-400 mt-1">
+                                    Controller bringe ich gerne mit. PA & Licht idealerweise vor Ort – sonst nach Absprache.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="services" class="mt-20 space-y-8">
-                <div class="flex items-center justify-between flex-wrap gap-3">
-                    <h2 class="font-display text-3xl">Event-Pakete</h2>
-                    <p class="text-gray-300 max-w-2xl">
-                        Von stilvollen Trauungen bis zur ekstatischen Peak-Time: Ich passe Set, Sound und Dramaturgie
-                        an deine Crowd an.
-                    </p>
-                </div>
-                <div class="grid gap-6 md:grid-cols-3">
-                    <article class="glass rounded-2xl p-6 space-y-3">
-                        <p class="text-sm text-glow uppercase tracking-[0.15em]">Hochzeiten</p>
-                        <h3 class="font-display text-2xl">Elegant &amp; emotional</h3>
-                        <p class="text-gray-300">
-                            Dezente Begleitung zum Dinner, gefühlvolle First-Dance-Momente und ein Finale, das alle
-                            Generationen vereint.
-                        </p>
-                        <p class="text-sm text-gray-400">Optionen: Technikpaket, Moderation, Wunschlisten</p>
-                    </article>
-                    <article class="glass rounded-2xl p-6 space-y-3">
-                        <p class="text-sm text-glow uppercase tracking-[0.15em]">Geburtstage</p>
-                        <h3 class="font-display text-2xl">Maximale Feierlaune</h3>
-                        <p class="text-gray-300">
-                            Aktuelle Club-Banger, House-Classics und deine persönlichen Lieblingssongs nahtlos
-                            gemixt, damit niemand sitzen bleibt.
-                        </p>
-                        <p class="text-sm text-gray-400">Optionen: Motto-Sets, Open-Format-Slot</p>
-                    </article>
-                    <article class="glass rounded-2xl p-6 space-y-3">
-                        <p class="text-sm text-glow uppercase tracking-[0.15em]">Clubs &amp; Corporate</p>
-                        <h3 class="font-display text-2xl">Peak-Time Energie</h3>
-                        <p class="text-gray-300">
-                            Treibender, energetischer House mit Tech-Kante, perfekt für volle Floors und Marken-Events
-                            mit Anspruch.
-                        </p>
-                        <p class="text-sm text-gray-400">Optionen: Opening/Closing, abgestimmte Playlists</p>
-                    </article>
-                </div>
-            </section>
-
-            <section id="sets" class="mt-20 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+            <!-- Sets (direkt & prominent) -->
+            <section id="sets" class="mt-16 grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
                 <div class="glass rounded-3xl p-8 space-y-6">
                     <div class="flex items-center justify-between gap-3 flex-wrap">
-                        <h2 class="font-display text-3xl">Aktuelle Sets &amp; Referenzen</h2>
-                        <span class="text-sm px-3 py-1 rounded-full bg-white/10 text-gray-200">House / Disco / Edits</span>
+                        <h2 class="font-display text-3xl">Mixes</h2>
+                        <span class="text-sm px-3 py-1 rounded-full bg-white/10 text-gray-200">SoundCloud</span>
                     </div>
                     <p class="text-gray-300">
-                        SoundCloud zeigt meine Groove-DNA: vocal House, Disco-Edits und treibende Basslines.
-                        Jeder Mix ist live gedacht - Spannungskurve von Sunset bis Peak-Time.
+                        Direkt hören statt lange lesen: hier findest du meine Sets und den Vibe. </p> Veröffentlichungen unter <em>Philipp 280</em>
                     </p>
+
                     <div class="relative aspect-video rounded-2xl border border-white/10 bg-black">
                         <div class="absolute inset-4">
                             <iframe
@@ -206,202 +186,94 @@
                                 allow="autoplay"
                                 src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/philipp-280&color=%23ff5f6d&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
                                 loading="lazy"
+                                title="SoundCloud Player"
                             ></iframe>
                         </div>
                     </div>
-                    <div class="grid gap-3 md:grid-cols-2 text-sm text-gray-300">
-                        <div class="glass rounded-xl p-4">
-                            <p class="text-white font-semibold">Clubs</p>
-                            <p>Pulse Berlin, Hafen 49, Nachtfabrik</p>
-                        </div>
-                        <div class="glass rounded-xl p-4">
-                            <p class="text-white font-semibold">Private Events</p>
-                            <p>Weddings &amp; Birthdays zwischen Hamburg &amp; München</p>
-                        </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a
+                            href="#contact"
+                            class="px-5 py-3 rounded-full bg-glow text-ink font-semibold shadow-lg shadow-glow/30 hover:brightness-110 transition"
+                        >
+                            Booking anfragen
+                        </a>
+                        <a
+                            href="mailto:philippgmelin@yahoo.de?subject=DJ%20Booking&body=Hey%20Mr%20PG,%20wir%20planen%20am%20[Datum]%20in%20[Ort]%20ein%20[Event].%20Gaeste:%20[Anzahl].%20Vibe:%20[Sound].%20Technik%20vor%20Ort:%20[PA/Licht]."
+                            class="px-5 py-3 rounded-full glass font-semibold hover:-translate-y-0.5 transition"
+                        >
+                            Direkt per Mail
+                        </a>
                     </div>
                 </div>
+
+                <!-- Kurzinfo statt 3 Kästen + Ablauf -->
                 <div class="space-y-5">
                     <div class="glass rounded-2xl p-6 space-y-3">
-                        <h3 class="font-display text-xl">Soundprofil</h3>
+                        <h3 class="font-display text-xl">Event-Pakete für</h3>
                         <ul class="space-y-2 text-gray-300 list-disc list-inside">
-                            <li>Vocal House mit warmen Chords</li>
-                            <li>Disco-Edits mit tiefen Basslines</li>
-                            <li>Transitions, die Spannung halten</li>
-                            <li>Auf Wunsch Open-Format &amp; Classics</li>
+                            <li>Firmenevents</li>
+                            <li>Hochzeiten</li>
+                            <li>Geburtstage</li>
+                            <li>Bars &amp; Clubs</li>
                         </ul>
                     </div>
                     <div class="glass rounded-2xl p-6 space-y-3">
-                        <h3 class="font-display text-xl">Ablauf</h3>
-                        <ol class="space-y-2 text-gray-300 list-decimal list-inside">
-                            <li>Call oder DM + Kurzbriefing</li>
-                            <li>Soundplanung inkl. Do/Don'ts &amp; Must-Plays</li>
-                            <li>Technik-Setup, Lautstaerke, Licht abgleichen</li>
-                            <li>Live: flexible Laufzeit, klare Moderation wenn noetig</li>
-                        </ol>
+                        <h3 class="font-display text-xl">Kurz & klar</h3>
+                        <ul class="space-y-2 text-gray-300 list-disc list-inside">
+                            <li>Set & Dramaturgie passend zur Crowd</li>
+                            <li>Falls benötigt bringe ich meinen Controller mit</li>
+                            <li>PA & Licht idealerweise vor Ort, sonst nach Absprache</li>
+                        </ul>
                     </div>
                     <div class="glass rounded-2xl p-6 space-y-3">
-                        <h3 class="font-display text-xl">Technik</h3>
+                        <h3 class="font-display text-xl">Was ich von dir brauche</h3>
                         <p class="text-gray-300">
-                            Club-Standard Pioneer-Setup, eigene Funkmikros, PA/Light auf Anfrage. Saubere Übergaben mit
-                            Technik-Crews gewohnt.
+                            Datum, Ort, grobe Gästezahl und den gewünschten Vibe – dann bekommst du schnell eine klare
+                            Rückmeldung.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="mt-20 glass rounded-3xl p-8">
+            <!-- Kontakt (ohne Modal, ohne Formular) -->
+            <section id="contact" class="mt-16 glass rounded-3xl p-8">
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                     <div class="space-y-3 max-w-2xl">
-                        <p class="text-sm uppercase tracking-[0.2em] text-glow">Let's talk groove</p>
-                        <h2 class="font-display text-3xl">Sag mir Datum, Ort und Vibe - ich bringe den Sound und die passenden Edits.</h2>
+                        <p class="text-sm uppercase tracking-[0.2em] text-glow">Kontakt</p>
+                        <h2 class="font-display text-3xl">Sag mir Datum, Ort und Vibe</h2>
                         <p class="text-gray-300">
-                            Schreib mir kurz dein Event-Setting. Du bekommst einen klaren Vorschlag, Paketidee und Preisrange.
+                            Schreib mir kurz dein Event-Setting (PA/Licht vor Ort?).</p> Du bekommst ein Vorschlag, Paketidee und Preisrange. Kontakt per Email, Whatsapp oder Anruf.
+                            
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-3">
                         <a
-                            href="mailto:booking@mrpg.dj?subject=DJ%20Booking&body=Hey%20Mr%20PG,%20wir%20planen%20am%20[Datum]%20in%20[Ort]%20ein%20[Event].%20Gaeste:%20[Anzahl].%20Vibe:%20[Sound].%20Besonderheiten:%20[...]"
+                            href="mailto:philippgmelin@yahoo.de?subject=DJ%20Booking&body=Hey%20Mr%20PG,%0A%0ADatum:%20[TT.MM.JJJJ]%0AOrt:%20[Location/City]%0AEvent:%20[Club/Bar/Privat]%0AGaeste:%20[Anzahl]%0AVibe:%20[House/Tech-House/...]%0APA%20%2F%20Licht%20vor%20Ort:%20[Ja/Nein]%0A%0ABeste%20Gruesse"
                             class="px-5 py-3 rounded-full bg-glow text-ink font-semibold shadow-lg shadow-glow/30 hover:brightness-110 transition"
                         >
-                            booking@mrpg.dj
+                            philippgmelin@yahoo.de
                         </a>
                         <a
-                            href="https://www.instagram.com/"
-                            class="px-5 py-3 rounded-full glass font-semibold hover:-translate-y-0.5 transition"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Instagram
-                        </a>
-                        <a
-                            href="tel:+491234567890"
+                            href="tel:+491741925924"
                             class="px-5 py-3 rounded-full glass font-semibold hover:-translate-y-0.5 transition"
                         >
-                            +49 123 456 7890
+                            +49 174 1925924
                         </a>
                     </div>
                 </div>
             </section>
         </main>
 
-        <div id="booking-modal" class="fixed inset-0 z-50 hidden">
-            <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" data-close-booking></div>
-            <div class="relative max-w-2xl mx-auto mt-20 px-4">
-                <div class="glass rounded-3xl border border-white/10 shadow-2xl bg-[#0f0f17] overflow-hidden">
-                    <div class="flex items-start justify-between p-6 pb-4">
-                        <div>
-                            <p class="text-sm uppercase tracking-[0.2em] text-glow">Jetzt buchen</p>
-                            <h3 class="font-display text-2xl">Sag mir kurz die Eckdaten.</h3>
-                        </div>
-                        <button type="button" data-close-booking class="text-gray-400 hover:text-white transition text-xl leading-none">&times;</button>
-                    </div>
-                    <div class="px-6 pb-6 space-y-5">
-                        <form
-                            class="space-y-4"
-                            action="mailto:booking@mrpg.dj"
-                            method="post"
-                            enctype="text/plain"
-                        >
-                            <div class="grid gap-4 md:grid-cols-2">
-                                <label class="space-y-1 text-sm text-gray-300">
-                                    <span>Datum</span>
-                                    <input name="Datum" type="text" placeholder="TT.MM.JJJJ" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
-                                </label>
-                                <label class="space-y-1 text-sm text-gray-300">
-                                    <span>Ort</span>
-                                    <input name="Ort" type="text" placeholder="Stadt / Location" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
-                                </label>
-                            </div>
-                            <div class="grid gap-4 md:grid-cols-2">
-                                <label class="space-y-1 text-sm text-gray-300">
-                                    <span>Event</span>
-                                    <input name="Event" type="text" placeholder="Hochzeit / Geburtstag / Club" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
-                                </label>
-                                <label class="space-y-1 text-sm text-gray-300">
-                                    <span>Gäste</span>
-                                    <input name="Gaeste" type="text" placeholder="ca. 80" class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow" />
-                                </label>
-                            </div>
-                            <label class="space-y-1 text-sm text-gray-300 block">
-                                <span>Wünsche &amp; Besonderheiten</span>
-                                <textarea
-                                    name="Wuensche"
-                                    rows="4"
-                                    placeholder="Musikrichtung, Technik, Zeitfenster..."
-                                    class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-glow"
-                                ></textarea>
-                            </label>
-                            <div class="flex flex-wrap gap-3 items-center">
-                                <button
-                                    type="submit"
-                                    class="px-5 py-3 rounded-full bg-gradient-to-r from-punch via-haze to-glow text-ink font-semibold shadow-lg shadow-punch/25 hover:scale-[1.01] transition"
-                                >
-                                    Anfrage per Mail senden
-                                </button>
-                                <a
-                                    href="tel:+491234567890"
-                                    class="px-5 py-3 rounded-full glass font-semibold hover:-translate-y-0.5 transition"
-                                >
-                                    Oder anrufen: +49 123 456 7890
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <footer class="relative max-w-6xl mx-auto px-6 pb-10 pt-12 text-sm text-gray-400">
             <div class="flex flex-wrap items-center gap-4 justify-between">
-                <p>© 2025 DJ Mr PG. All Groove Reserved.</p>
+                <p>© 2026 DJ Mr PG. All Groove Reserved.</p>
                 <div class="flex gap-4">
-                    <a href="#services" class="hover:text-white transition">Pakete</a>
-                    <a href="#sets" class="hover:text-white transition">Sets</a>
+                    <a href="#top" class="hover:text-white transition">Top</a>
+                    <a href="#sets" class="hover:text-white transition">Mixes</a>
                     <a href="#contact" class="hover:text-white transition">Kontakt</a>
                 </div>
             </div>
         </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const modal = document.getElementById('booking-modal');
-                if (!modal) return;
-                const openers = document.querySelectorAll('[data-open-booking]');
-                const closers = modal.querySelectorAll('[data-close-booking]');
-                const body = document.body;
-
-                const openModal = () => {
-                    modal.classList.remove('hidden');
-                    body.classList.add('overflow-hidden');
-                };
-
-                const closeModal = () => {
-                    modal.classList.add('hidden');
-                    body.classList.remove('overflow-hidden');
-                };
-
-                openers.forEach((btn) =>
-                    btn.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        openModal();
-                    })
-                );
-
-                closers.forEach((el) =>
-                    el.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        closeModal();
-                    })
-                );
-
-                document.addEventListener('keydown', (event) => {
-                    if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
-                        closeModal();
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
-
-
-
